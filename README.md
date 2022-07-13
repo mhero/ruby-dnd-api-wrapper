@@ -4,8 +4,8 @@
 
 ```
 \curl -sSL https://get.rvm.io | bash
-rvm install "ruby-3.1.1"
-rvm use 3.1.1
+rvm install "ruby-3.1.2"
+rvm use 3.1.2
 ```
 
 2. Clone repository
