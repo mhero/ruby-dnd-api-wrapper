@@ -79,7 +79,7 @@ RSpec.describe Card do
       )
       expect(
         query.count
-      ).to eq(1)
+      ).to eq(2)
 
       expect(
         query.all.map { |element| element[:name] }.uniq.first
@@ -92,9 +92,10 @@ RSpec.describe Card do
           Filter.new(name: 'colors', value: ['White'], type: :in)
         ]
       )
+
       expect(
         query.count
-      ).to eq(29)
+      ).to eq(93)
 
       expect(
         query.all.map { |element| element[:colors] }.uniq.first
