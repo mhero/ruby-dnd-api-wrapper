@@ -89,17 +89,17 @@ RSpec.describe Card do
     it 'returns a cards with content in array' do
       query = subject.where(
         filters: [
-          Filter.new(name: 'colors', value: ['White'], type: :in)
+          Filter.new(name: 'colors', value: ['Red'], type: :in)
         ]
       )
 
       expect(
         query.count
-      ).to eq(93)
+      ).to eq(3)
 
       expect(
         query.all.map { |element| element[:colors] }.uniq.first
-      ).to eq('White')
+      ).to eq('Red,Blue')
     end
   end
 end
