@@ -4,8 +4,8 @@
 
 ```
 \curl -sSL https://get.rvm.io | bash
-rvm install "ruby-3.3.5"
-rvm use 3.3.5
+rvm install ruby-3.3.6 --with-openssl-dir=$(brew --prefix openssl)
+rvm use 3.3.6
 ```
 
 2. Clone repository
